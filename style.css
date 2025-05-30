@@ -1,0 +1,111 @@
+body,
+html {
+  padding: 0;
+  width: auto;
+}
+
+body {
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.custom-navbar {
+  background-color: darkorchid !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  height: 70px;
+}
+.custom-navbar a {
+  font-size: 30px !important;
+  display: inline-block !important;
+}
+main {
+  padding-top: 70px;
+}
+
+.custom-navbar a:hover {
+  animation: title_move 6s ease-in-out infinite;
+}
+@keyframes title_move {
+  0% {
+    transform: scale(1) rotate(0deg) translateZ(0px);
+  }
+  50% {
+    transform: scale(0.7) rotate(360deg) translateZ(-100px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateZ(0px);
+  }
+}
+
+.container-fluid h1 {
+  margin: 0;
+  padding: 10px 0; /* opcional, para no quedar pegado */
+}
+.form-check {
+  padding: 4px;
+}
+.btn-check {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+label p {
+  margin: 0;
+  color: black;
+  font-weight: 500px;
+}
+.btn-outline-secondary {
+  border-color: blueviolet !important;
+}
+.btn-check:checked + .btn-outline-secondary {
+  background-color: #8e28a7 !important; /* verde, cambia por el color que quieras */
+  border-color: #28a745;
+  color: white;
+}
+
+.container-main {
+  padding-top: 100px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+@media (max-width: 768px) {
+  .btn-custom {
+    height: 70px;
+  }
+  footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+
+    text-align: center;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+
+  text-align: center;
+}
+.btn-padding {
+  padding-bottom: 50px !important;
+}
+.correct-answer {
+  border: 2px solid green !important;
+  box-shadow: 0 0 5px green;
+}
+
+.incorrect-answer {
+  border: 2px solid red !important;
+  box-shadow: 0 0 5px red;
+}

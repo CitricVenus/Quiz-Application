@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Quizz App</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand animation" href="#">Quizz</a>
+          <button id="reloadBtn" class="btn btn-secondary me-2">
+            Restart Quiz
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="mainQuestions">
+      <div id="loading" style="display: none">Cargando preguntas...</div>
+    </main>
+
+    <section id="previous_next">
+      <div class="container-fluid pt-5 btn-padding justify-content-between">
+        <div class="row" id="controlButns">
+          <div class="col text-start ps-5">
+            <button id="prevBtn" class="btn btn-primary btn-custom">
+              Previous Question
+            </button>
+          </div>
+          <div class="col text-end pe-5">
+            <button id="nextBtn" class="btn btn-primary btn-custom">
+              Next Question
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-2">
+      <div class="container-fluid">
+        <div
+          class="text-center"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+          "
+        >
+          <div>
+            <h3 style="display: inline">Score:</h3>
+            <h3 id="score" style="display: inline">0</h3>
+            <h3 style="display: inline">%</h3>
+          </div>
+          <div>
+            <h3 style="display: inline">Questions Answered:</h3>
+            <h3 id="questionsAnsweredNumber" style="display: inline">0</h3>
+            <h3 style="display: inline">/</h3>
+            <h3 id="questionsLess" style="display: inline">0</h3>
+          </div>
+          <div>
+            <h3 style="display: inline">Incorrect Answers:</h3>
+            <h3 id="incorrectAnswerNumber" style="display: inline">0</h3>
+          </div>
+          <div>
+            <h3 style="display: inline">Corrects Answers:</h3>
+            <h3 id="correctAnswerNumber" style="display: inline">0</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
